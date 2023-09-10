@@ -1,3 +1,5 @@
+using GroceryStore.Constants;
+
 namespace GroceryStore.Models;
 
 public class Shop
@@ -20,7 +22,6 @@ public class Shop
         Console.WriteLine($"{separatingLine}\n{header}");
         _customers
             .Select(customer => $"{separatingLine}\n{customer.GetCustomerInfo()}")
-            .ToList()
             .ForEach(Console.WriteLine);
     }
 }

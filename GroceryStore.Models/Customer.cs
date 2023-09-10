@@ -1,3 +1,5 @@
+using GroceryStore.Constants;
+
 namespace GroceryStore.Models;
 
 public class Customer
@@ -35,10 +37,9 @@ public class Customer
 
     public void AddProductsToCart(params Product[] products) => _cart.AddRange(products);
 
-    public void AddProductsToCart(Product product, int amount)
-    {
-        for (var i = 0; i < amount; i++) _cart.Add(product);
-    }
+    public void AddProductsToCart(Product product, int amount) =>
+        Enumerable.Range(0, amount)
+            .ForEach(_ => _cart.Add(product));
 
     public string GetCustomerInfo()
     {
@@ -48,7 +49,7 @@ public class Customer
             .Select(productGroup => FormatCartProduct(productGroup.Key, productGroup.Count()));
         if (_cart.Any()) cartProducts = cartProducts.Append(FormatTotal(_cart.Select(product => product.Price).Sum()));
         var cartInfo = string.Join(delimiter, cartProducts.DefaultIfEmpty("EMPTY").Select(info => $"{info,-60}"));
-        
+
         return $"| {FullName,-15} | {_age,-5} | {_sex,-5} | {(_hasDiscountCard ? "YES" : "NO"),-20} |" +
                $" {_personalDiscount,-20:P0} | {cartInfo} |";
     }
