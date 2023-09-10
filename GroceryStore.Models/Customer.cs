@@ -41,21 +41,21 @@ public class Customer
         Enumerable.Range(0, amount)
             .ForEach(_ => _cart.Add(product));
 
-    public string GetCustomerInfo()
+    public override string ToString()
     {
         var delimiter = string.Format(" |\n| {0, 15} | {0, 5} | {0, 5} | {0, 20} | {0, 20} | ", "");
         var cartProducts = _cart
             .GroupBy(product => product)
             .Select(productGroup => FormatCartProduct(productGroup.Key, productGroup.Count()));
         if (_cart.Any()) cartProducts = cartProducts.Append(FormatTotal(_cart.Select(product => product.Price).Sum()));
-        var cartInfo = string.Join(delimiter, cartProducts.DefaultIfEmpty("EMPTY").Select(info => $"{info,-60}"));
+        var cartInfo = string.Join(delimiter, cartProducts.DefaultIfEmpty("EMPTY").Select(info => $"{info,-80}"));
 
         return $"| {FullName,-15} | {_age,-5} | {_sex,-5} | {(_hasDiscountCard ? "YES" : "NO"),-20} |" +
                $" {_personalDiscount,-20:P0} | {cartInfo} |";
     }
 
     private static string FormatCartProduct(Product product, int amount) =>
-        $"{product.GetProductInfo()} - {amount}x - {amount * product.Price:C2};";
+        $"{product.ToStringExt()} - {amount}x - {amount * product.Price:C2};";
 
     private string FormatTotal(double sum) =>
         $"TOTAL - {sum:C2} - DISCOUNT - {_personalDiscount:P0} - {sum - sum * _personalDiscount:C2}";
