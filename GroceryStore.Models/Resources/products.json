@@ -1,0 +1,51 @@
+﻿[
+  {
+    "category": 4,
+    "isAlcohol": false,
+    "volume": 0.5,
+    "name": "Coca-Cola",
+    "expirationDays": 30,
+    "price": 1.12,
+    "expirationDate": "2023-10-12T00:00:00+03:00"
+  },
+  {
+    "category": 0,
+    "weight": 0.5,
+    "name": "Tomatoes",
+    "expirationDays": 4,
+    "price": 0.99,
+    "expirationDate": "2023-09-16T00:00:00+03:00"
+  },
+  {
+    "category": 3,
+    "isNoFat": false,
+    "name": "Lay\u0027s Cheese",
+    "expirationDays": 90,
+    "price": 2.49,
+    "expirationDate": "2023-12-11T00:00:00+02:00"
+  },
+  {
+    "category": 2,
+    "fishType": 2,
+    "name": "Norway Herring",
+    "expirationDays": 1,
+    "price": 4.55,
+    "expirationDate": "2023-09-13T00:00:00+03:00"
+  },
+  {
+    "category": 4,
+    "isAlcohol": true,
+    "volume": 0.75,
+    "name": "Aperol",
+    "expirationDays": 30,
+    "price": 9.99,
+    "expirationDate": "2023-10-12T00:00:00+03:00"
+  },
+  {
+    "category": 1,
+    "name": "Chicken Nuggets",
+    "expirationDays": 1,
+    "price": 4.99,
+    "expirationDate": "2023-09-13T00:00:00+03:00"
+  }
+]

@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryStore.Constants", "G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryStore.Models", "GroceryStore.Models\GroceryStore.Models.csproj", "{9C8F33E9-B562-4030-B8AB-3BD19282ED0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryStore.Core", "GroceryStore.Core\GroceryStore.Core.csproj", "{7B1290E4-B1DD-4081-BB40-BA5FEC2204F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{9C8F33E9-B562-4030-B8AB-3BD19282ED0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C8F33E9-B562-4030-B8AB-3BD19282ED0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C8F33E9-B562-4030-B8AB-3BD19282ED0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1290E4-B1DD-4081-BB40-BA5FEC2204F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1290E4-B1DD-4081-BB40-BA5FEC2204F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1290E4-B1DD-4081-BB40-BA5FEC2204F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1290E4-B1DD-4081-BB40-BA5FEC2204F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
