@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using GroceryStore.Constants;
 
 namespace GroceryStore.Models;
@@ -7,6 +8,7 @@ public class Drink : Product
     public bool IsAlcohol { get; }
     public double Volume { get; }
 
+    [JsonConstructor]
     public Drink(string name, double price, double volume, bool isAlcohol = false, 
         ProductCategories category = ProductCategories.Drinks, int expirationDays = 30) 
         : base(name, category, price, expirationDays)

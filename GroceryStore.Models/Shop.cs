@@ -1,19 +1,38 @@
 using GroceryStore.Constants;
+using GroceryStore.Core.Helpers;
 
 namespace GroceryStore.Models;
 
 public static class Shop
 {
-    private static readonly List<Customer> _customers = new();
-    private static readonly List<Product> _products = new();
+    private const string CustomersFilePath = "Resources/customers.json";
+    private const string ProductsFilePath = "Resources/products.json";
 
-    public static void AddCustomer(string firstName, string lastName, int age, Sex sex, bool hasDiscountCard,
+    private static readonly ISet<Customer> Customers =
+        new HashSet<Customer>(JsonHelper.GetData<Customer>(CustomersFilePath));
+
+    private static readonly ISet<Product> Products =
+        new HashSet<Product>(JsonHelper.GetData<Product>(ProductsFilePath));
+
+    public static void AddCustomer(string firstName, string lastName, int age, SexTypes sexTypes, bool hasDiscountCard,
         double personalDiscount = 0) =>
-        _customers.Add(new Customer(firstName, lastName, age, sex, hasDiscountCard, personalDiscount));
+        Customers.AddCustomer(new Customer(firstName, lastName, age, sexTypes, hasDiscountCard, personalDiscount));
 
-    public static void AddCustomer(params Customer[] customers) => _customers.AddRange(customers);
+    public static void AddCustomer(params Customer[] customers) =>
+        customers.ForEach(customer => Customers.AddCustomer(customer));
 
-    public static void AddProduct(Product product) => _products.Add(product);
+    public static void AddProduct(params Product[] products) =>
+        products.ForEach(product => Products.AddProduct(product));
+
+    public static void UpdateCustomer(Customer updatedCustomer)
+    {
+        var customerToReplace = Customers.First(customer => updatedCustomer.Id.Equals(customer.Id));
+        Customers.Remove(customerToReplace);
+        Customers.AddCustomer(updatedCustomer);
+    }
+
+    public static Customer GetCustomer(string fullName) =>
+        Customers.First(customer => fullName.Equals(customer.FullName));
 
     public static void PrintCustomersInformation()
     {
@@ -22,7 +41,7 @@ public static class Shop
         var separatingLine = new string('-', header.Length);
 
         Console.WriteLine($"{separatingLine}\n{header}");
-        _customers
+        Customers
             .Select(customer => $"{separatingLine}\n{customer}")
             .ForEach(Console.WriteLine);
     }

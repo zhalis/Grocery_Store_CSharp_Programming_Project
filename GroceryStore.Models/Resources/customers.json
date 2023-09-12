@@ -1,0 +1,237 @@
+﻿[
+  {
+    "id": "6a66530c-ea49-433e-8c09-89fe6fae73ac",
+    "firstName": "John",
+    "lastName": "Claus",
+    "age": 22,
+    "sex": "M",
+    "hasDiscountCard": true,
+    "personalDiscount": 0.02,
+    "cart": [
+      {
+        "category": 4,
+        "isAlcohol": false,
+        "volume": 0.5,
+        "name": "Coca-Cola",
+        "expirationDays": 30,
+        "price": 1.12,
+        "expirationDate": "2023-10-12T00:00:00+03:00"
+      },
+      {
+        "category": 4,
+        "isAlcohol": false,
+        "volume": 0.5,
+        "name": "Coca-Cola",
+        "expirationDays": 30,
+        "price": 1.12,
+        "expirationDate": "2023-10-12T00:00:00+03:00"
+      },
+      {
+        "category": 2,
+        "fishType": 2,
+        "name": "Norway Herring",
+        "expirationDays": 1,
+        "price": 4.55,
+        "expirationDate": "2023-09-13T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      }
+    ]
+  },
+  {
+    "id": "8987f150-e573-44a1-9287-4568bb3b1076",
+    "firstName": "Sam",
+    "lastName": "Brooks",
+    "age": 67,
+    "sex": "F",
+    "hasDiscountCard": true,
+    "personalDiscount": 0.12,
+    "cart": [
+      {
+        "category": 1,
+        "name": "Chicken Nuggets",
+        "expirationDays": 1,
+        "price": 4.99,
+        "expirationDate": "2023-09-13T00:00:00+03:00"
+      }
+    ]
+  },
+  {
+    "id": "574edae4-168e-4c1c-98b7-132f89bb96f1",
+    "firstName": "Alois",
+    "lastName": "Winter",
+    "age": 15,
+    "sex": "M",
+    "hasDiscountCard": false,
+    "personalDiscount": 0,
+    "cart": [
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      },
+      {
+        "category": 0,
+        "weight": 0.5,
+        "name": "Tomatoes",
+        "expirationDays": 4,
+        "price": 0.99,
+        "expirationDate": "2023-09-16T00:00:00+03:00"
+      }
+    ]
+  },
+  {
+    "id": "d40f12ca-8b61-4fce-b391-f39fe5aa5c55",
+    "firstName": "Ann",
+    "lastName": "Siemens",
+    "age": 44,
+    "sex": "F",
+    "hasDiscountCard": false,
+    "personalDiscount": 0,
+    "cart": [
+      {
+        "category": 4,
+        "isAlcohol": true,
+        "volume": 0.75,
+        "name": "Aperol",
+        "expirationDays": 30,
+        "price": 9.99,
+        "expirationDate": "2023-10-12T00:00:00+03:00"
+      }
+    ]
+  },
+  {
+    "id": "dd2dec7f-5914-4451-9ca7-4313ff2a6aca",
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "age": 9,
+    "sex": "M",
+    "hasDiscountCard": false,
+    "personalDiscount": 0,
+    "cart": [
+      {
+        "category": 3,
+        "isNoFat": false,
+        "name": "Lay\u0027s Cheese",
+        "expirationDays": 90,
+        "price": 2.49,
+        "expirationDate": "2023-12-11T00:00:00+02:00"
+      },
+      {
+        "category": 3,
+        "isNoFat": false,
+        "name": "Lay\u0027s Cheese",
+        "expirationDays": 90,
+        "price": 2.49,
+        "expirationDate": "2023-12-11T00:00:00+02:00"
+      },
+      {
+        "category": 3,
+        "isNoFat": false,
+        "name": "Lay\u0027s Cheese",
+        "expirationDays": 90,
+        "price": 2.49,
+        "expirationDate": "2023-12-11T00:00:00+02:00"
+      },
+      {
+        "category": 3,
+        "isNoFat": false,
+        "name": "Lay\u0027s Cheese",
+        "expirationDays": 90,
+        "price": 2.49,
+        "expirationDate": "2023-12-11T00:00:00+02:00"
+      },
+      {
+        "category": 3,
+        "isNoFat": false,
+        "name": "Lay\u0027s Cheese",
+        "expirationDays": 90,
+        "price": 2.49,
+        "expirationDate": "2023-12-11T00:00:00+02:00"
+      },
+      {
+        "category": 4,
+        "isAlcohol": false,
+        "volume": 0.5,
+        "name": "Coca-Cola",
+        "expirationDays": 30,
+        "price": 1.12,
+        "expirationDate": "2023-10-12T00:00:00+03:00"
+      },
+      {
+        "category": 4,
+        "isAlcohol": false,
+        "volume": 0.5,
+        "name": "Coca-Cola",
+        "expirationDays": 30,
+        "price": 1.12,
+        "expirationDate": "2023-10-12T00:00:00+03:00"
+      }
+    ]
+  }
+]

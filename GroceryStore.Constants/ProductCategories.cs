@@ -1,7 +1,9 @@
 using System.ComponentModel;
+using System.Text.Json.Serialization;
 
 namespace GroceryStore.Constants;
 
+[JsonConverter(typeof(JsonStringEnumConverter))]
 public enum ProductCategories
 {
     [Description("Fruits & Vegetables")] FruitAndVegetables,

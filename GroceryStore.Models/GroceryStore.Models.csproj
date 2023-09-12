@@ -10,4 +10,21 @@
       <ProjectReference Include="..\GroceryStore.Constants\GroceryStore.Constants.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\GroceryStore.Core\GroceryStore.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Resources\customers.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\products.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="JsonService.cs" />
+    </ItemGroup>
+
 </Project>
