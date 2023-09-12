@@ -15,12 +15,9 @@ public static class JsonHelper
 
     public static void SetData<T>(ICollection<T> objects, string filePath)
     {
-        var fullFilePath =
-            "C:\\Users\\GoNzO\\RiderProjects\\Grocery_Store_CSharp_Programming_Project\\GroceryStore.Models\\" +
-            filePath; //TODO fix path
         var serializerOptions = new JsonSerializerOptions
             { PropertyNamingPolicy = JsonNamingPolicy.CamelCase, WriteIndented = true };
         var serializedCollection = JsonSerializer.Serialize(objects, serializerOptions);
-        File.WriteAllText(fullFilePath, serializedCollection, Encoding.UTF8);
+        File.WriteAllText(filePath, serializedCollection, Encoding.UTF8);
     }
 }
